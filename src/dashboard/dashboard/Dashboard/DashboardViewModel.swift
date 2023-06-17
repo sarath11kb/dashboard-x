@@ -9,11 +9,11 @@ import Foundation
 
 
 class DashboardViewModel: ObservableObject {
-    var message: String = ""
-    var dashboardService = DashboardService()
     @Published var responseObject: DashboardResponse?
+    var message: String = ""
     
-    init(message: String) {
+    
+    init(message: String = "") {
         self.message = message
         
     }

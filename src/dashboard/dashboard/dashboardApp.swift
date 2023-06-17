@@ -14,6 +14,7 @@ struct dashboardApp: App {
     var body: some Scene {
         WindowGroup {
             DashboardView()
+                .padding(0)
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

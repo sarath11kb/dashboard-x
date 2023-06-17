@@ -8,25 +8,24 @@
 import SwiftUI
 
 struct ScrollCardsView: View {
-    var cardNums: Int = 4
+    @StateObject var dashboardViewModel: DashboardViewModel = DashboardViewModel(message: "analyticsView")
+    
+    
     var body: some View {
-        ScrollView(.horizontal) {
+        ScrollView(.horizontal, showsIndicators: false) {
             HStack {
-                ForEach(0..<cardNums, id: \.self) { i in
-                    RoundedRectangle(cornerRadius: 8)
-                        .frame(width: 120, height: 120)
-                        .foregroundColor(.blue)
-                    
+                if let todaysClicks = dashboardViewModel.responseObject?.todayClicks {
+                    AnalyticsCardView(heading: String(todaysClicks)  , subHeading: "Today's Clicks", imageSource: "todays-clicks")
+                }
+                if let topLocation = dashboardViewModel.responseObject?.topLocation {
+                    AnalyticsCardView(heading: topLocation, subHeading: "Top Location", imageSource: "top-location")
+                }
+                if let topSource = dashboardViewModel.responseObject?.topSource {
+                    AnalyticsCardView(heading: topSource , subHeading: "Top Source", imageSource: "top-source")
                 }
             }
             .padding(.vertical, 20)
             
         }
-    }
-}
-
-struct ScrollCardsView_Previews: PreviewProvider {
-    static var previews: some View {
-        ScrollCardsView()
     }
 }

@@ -8,39 +8,52 @@
 import SwiftUI
 
 struct AnalyticsView: View {
+    @StateObject var dashboardViewModel = DashboardViewModel(message: "analyticsView")
+    
     var body: some View {
-        ScrollView{
-            VStack {
-                Text("Good Morning")
-                    .foregroundColor(.gray)
-                Text("Ajay Manwa")
-                    .foregroundColor(.black)
+        VStack {
+            VStack(alignment: .leading) {
+                HStack {
+                    Text("Good Morning")
+                        .font(.figTreeLight16)
+                        .foregroundColor(.subText)
+                        .multilineTextAlignment(.leading)
+                    Spacer()
+                }
+                
+                HStack {
+                    Text("Ajay Manwa ")
+                        .font(.figTreeBold24)
+                        .foregroundColor(.text)
+                    Image("wave")
+                        .frame(width: 28, height: 28)
+                }
+               
+                
             }
             
             ChartView()
-            ScrollCardsView()
-            
-            
+            ScrollCardsView(dashboardViewModel: dashboardViewModel)
             
             HStack {
-                Image(systemName: "arrow.up.forward")
+                Image("price-boost")
                 Text("View Analytics")
+                    .font(.figTreeMedium16)
+                    .foregroundColor(.text)
             }
             .frame(width: 328, height: 24)
             .padding(.vertical)
             .foregroundColor(.gray)
-            .background(
-                RoundedRectangle(cornerRadius: 8)
-                    .stroke(.black, lineWidth: 1)
+            .overlay(
+                RoundedRectangle(cornerRadius: 8).stroke(Color.searchButtonBorder, lineWidth: 2)
             )
             
-            
-            
-            LinksView()
+            LinksView(dashboardViewModel: dashboardViewModel)
             
             
         }
         .frame(width: 328)
+//        .clipShape(RoundedRectangle(cornerRadius: 8))
         .foregroundColor(.white)
     }
 }

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ChartView: View {
     var body: some View {
-        RoundedRectangle(cornerRadius: 8)
+        Image("graph")
             .frame(width: 328, height: 200)
             .foregroundColor(.gray)
     }
