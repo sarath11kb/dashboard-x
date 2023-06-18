@@ -14,7 +14,7 @@ struct AnalyticsView: View {
         VStack {
             VStack(alignment: .leading) {
                 HStack {
-                    Text("Good Morning")
+                    Text(Date.getGreeting())
                         .font(.figTreeLight16)
                         .foregroundColor(.subText)
                         .multilineTextAlignment(.leading)
@@ -32,7 +32,7 @@ struct AnalyticsView: View {
                 
             }
             
-            ChartView()
+            ChartView(dashboardViewModel: dashboardViewModel)
             ScrollCardsView(dashboardViewModel: dashboardViewModel)
             
             HStack {
@@ -53,7 +53,6 @@ struct AnalyticsView: View {
             
         }
         .frame(width: 328)
-//        .clipShape(RoundedRectangle(cornerRadius: 8))
         .foregroundColor(.white)
     }
 }

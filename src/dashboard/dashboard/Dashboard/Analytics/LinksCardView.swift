@@ -86,13 +86,7 @@ struct LinksCardView: View {
         }
         .frame( height: 120)
         .foregroundColor(.text)
-        .background(Color.primary)
+        .background(Color.appBackground)
         .clipShape(RoundedRectangle(cornerRadius: 8))
     }
 }
-
-//struct LinksCardView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        LinksCardView()
-//    }
-//}

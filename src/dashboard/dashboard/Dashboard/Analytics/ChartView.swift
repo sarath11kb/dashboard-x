@@ -8,16 +8,11 @@
 import SwiftUI
 
 struct ChartView: View {
+    @StateObject var dashboardViewModel: DashboardViewModel
+    
     var body: some View {
-        Image("graph")
+        GrphView(dashboardViewModel: dashboardViewModel)
             .frame(width: 328, height: 200)
             .foregroundColor(.gray)
-    }
-    
-}
-
-struct ChartView_Previews: PreviewProvider {
-    static var previews: some View {
-        ChartView()
     }
 }

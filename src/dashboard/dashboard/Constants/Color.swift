@@ -21,4 +21,5 @@ extension Color {
     static let faqBorder = Color("faqBorder")
     static let whatsAppBg = Color("whatsAppBg")
     static let whatsAppBorder = Color("whatsAppBorder")
+    static let appBackground = Color.white
 }

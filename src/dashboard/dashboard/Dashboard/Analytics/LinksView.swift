@@ -49,7 +49,6 @@ struct LinksView: View {
                         RoundedRectangle(cornerRadius: 8)
                             .stroke(Color.searchButtonBorder, lineWidth: 2  )
                     )
-//                    .border(1)
                     
                 
             }

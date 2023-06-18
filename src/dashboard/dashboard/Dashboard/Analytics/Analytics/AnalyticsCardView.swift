@@ -27,15 +27,10 @@ struct AnalyticsCardView: View {
                 .font(.figTreeLight14)
                 .foregroundColor(.subText)
                 .padding(.horizontal, 12)
+                .padding(.bottom)
         }
         .foregroundColor(Color.text)
         .frame(width: 120, height: 120)
         .background(RoundedRectangle(cornerRadius: 8).fill(.white))
     }
 }
-
-//struct AnalyticsCardView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        AnalyticsCardView()
-//    }
-//}

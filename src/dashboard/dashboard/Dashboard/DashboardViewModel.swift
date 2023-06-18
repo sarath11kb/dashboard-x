@@ -7,11 +7,16 @@
 
 import Foundation
 
+struct ChartData: Identifiable {
+    var date: String
+    var count: Int
+    var id = UUID()
+}
 
 class DashboardViewModel: ObservableObject {
     @Published var responseObject: DashboardResponse?
     var message: String = ""
-    
+    @Published var chartData: [ChartData] = []
     
     init(message: String = "") {
         self.message = message
@@ -26,12 +31,27 @@ extension DashboardViewModel {
             if let _ = err {
                 print("err calling api")
             }
+            
+            
             if let resp = res {
                 DispatchQueue.main.async {
                     self.responseObject = resp
+                    self.getGraphPlotPoints()
                 }
                 print("success")
             }
         }
     }
+    
+    func getGraphPlotPoints() {
+        if let graphMap = self.responseObject?.data.overallURLChart {
+            self.chartData = []
+            for key in graphMap.keys {
+                if let count = graphMap[key] {
+                    self.chartData.append(.init(date: key, count: count))
+                }
+            }
+        }
+    }
+    
 }

@@ -16,6 +16,7 @@ extension Font {
     static let figTreeRegular16 = Font.custom("Figtree-Regular", size: 16)
     static let figTreeRegular14 = Font.custom("Figtree-Regular", size: 14)
     static let figTreeRegular12 = Font.custom("Figtree-Regular", size: 12)
+    static let figTreeRegular11 = Font.custom("Figtree-Regular", size: 11)
     static let figTreeLight12 = Font.custom("Figtree-Light", size: 12)
     static let figTreeLight14 = Font.custom("Figtree-Light", size: 14)
     static let figTreeLight16 = Font.custom("Figtree-Light", size: 16)
