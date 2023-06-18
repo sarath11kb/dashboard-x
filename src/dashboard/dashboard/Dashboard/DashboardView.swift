@@ -23,7 +23,7 @@ struct DashboardView: View {
                             .frame(width: 40,height: 40)
                     }
                     .padding(.horizontal)
-                    .padding(.top, 52)
+                    .padding(.top, 48)
                     .padding(.bottom, 48)
                     
                     AnalyticsView(dashboardViewModel: viewModel)
