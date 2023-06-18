@@ -10,7 +10,6 @@
 		8458AE712A39E06F00086AE6 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8458AE702A39E06F00086AE6 /* ErrorModel.swift */; };
 		8458AE732A3A27A200086AE6 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8458AE722A3A27A200086AE6 /* DashboardViewModel.swift */; };
 		8496E60E2A376B11003F22F4 /* dashboardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496E60D2A376B11003F22F4 /* dashboardApp.swift */; };
-		8496E6102A376B11003F22F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496E60F2A376B11003F22F4 /* ContentView.swift */; };
 		8496E6122A376B12003F22F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8496E6112A376B12003F22F4 /* Assets.xcassets */; };
 		8496E6152A376B12003F22F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8496E6142A376B12003F22F4 /* Preview Assets.xcassets */; };
 		8496E6172A376B12003F22F4 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496E6162A376B12003F22F4 /* Persistence.swift */; };
@@ -23,7 +22,6 @@
 		8496E6452A376F7F003F22F4 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496E6442A376F7F003F22F4 /* ChartView.swift */; };
 		8496E6472A377026003F22F4 /* ScrollCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496E6462A377026003F22F4 /* ScrollCardsView.swift */; };
 		8496E6492A380B56003F22F4 /* LinksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496E6482A380B56003F22F4 /* LinksView.swift */; };
-		8496E64B2A380B7B003F22F4 /* AnalyticsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496E64A2A380B7B003F22F4 /* AnalyticsModel.swift */; };
 		8496E64E2A384890003F22F4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496E64D2A384890003F22F4 /* NetworkManager.swift */; };
 		8496E6512A39C472003F22F4 /* DashboardResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496E6502A39C472003F22F4 /* DashboardResponseModel.swift */; };
 		8496E6532A39C574003F22F4 /* DashboardRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496E6522A39C574003F22F4 /* DashboardRequestModel.swift */; };
@@ -52,7 +50,8 @@
 		84D786982A3DA13D00ACE306 /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D786972A3DA13D00ACE306 /* Shapes.swift */; };
 		84D7869A2A3DB23200ACE306 /* BottomTabCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D786992A3DB23200ACE306 /* BottomTabCardView.swift */; };
 		84D7869C2A3DBC3A00ACE306 /* DateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7869B2A3DBC3A00ACE306 /* DateTime.swift */; };
-		84D7869E2A3DC2A500ACE306 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7869D2A3DC2A500ACE306 /* SwiftUIView.swift */; };
+		84D7869E2A3DC2A500ACE306 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7869D2A3DC2A500ACE306 /* GraphView.swift */; };
+		84D786A12A3EF2A100ACE306 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D786A02A3EF2A100ACE306 /* Models.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,7 +76,6 @@
 		8458AE722A3A27A200086AE6 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		8496E60A2A376B11003F22F4 /* dashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dashboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8496E60D2A376B11003F22F4 /* dashboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dashboardApp.swift; sourceTree = "<group>"; };
-		8496E60F2A376B11003F22F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8496E6112A376B12003F22F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8496E6142A376B12003F22F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8496E6162A376B12003F22F4 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -92,7 +90,6 @@
 		8496E6442A376F7F003F22F4 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		8496E6462A377026003F22F4 /* ScrollCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollCardsView.swift; sourceTree = "<group>"; };
 		8496E6482A380B56003F22F4 /* LinksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksView.swift; sourceTree = "<group>"; };
-		8496E64A2A380B7B003F22F4 /* AnalyticsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsModel.swift; sourceTree = "<group>"; };
 		8496E64D2A384890003F22F4 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		8496E6502A39C472003F22F4 /* DashboardResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardResponseModel.swift; sourceTree = "<group>"; };
 		8496E6522A39C574003F22F4 /* DashboardRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardRequestModel.swift; sourceTree = "<group>"; };
@@ -122,7 +119,8 @@
 		84D786972A3DA13D00ACE306 /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
 		84D786992A3DB23200ACE306 /* BottomTabCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabCardView.swift; sourceTree = "<group>"; };
 		84D7869B2A3DBC3A00ACE306 /* DateTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTime.swift; sourceTree = "<group>"; };
-		84D7869D2A3DC2A500ACE306 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		84D7869D2A3DC2A500ACE306 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		84D786A02A3EF2A100ACE306 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,12 +173,11 @@
 			children = (
 				84D786712A3CAAAB00ACE306 /* Info.plist */,
 				84D7866B2A3CAA4B00ACE306 /* Assets */,
-				84D786642A3B461800ACE306 /* Constants */,
+				84D786642A3B461800ACE306 /* Extensions */,
 				8496E64F2A39C44D003F22F4 /* Models */,
 				8496E64C2A384871003F22F4 /* Network */,
 				8496E63C2A376B74003F22F4 /* Dashboard */,
 				8496E60D2A376B11003F22F4 /* dashboardApp.swift */,
-				8496E60F2A376B11003F22F4 /* ContentView.swift */,
 				8496E6112A376B12003F22F4 /* Assets.xcassets */,
 				8496E6162A376B12003F22F4 /* Persistence.swift */,
 				8496E6182A376B12003F22F4 /* dashboard.xcdatamodeld */,
@@ -217,34 +214,23 @@
 		8496E63C2A376B74003F22F4 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
-				8496E6412A376CAC003F22F4 /* Analytics */,
-				8496E6402A376C9B003F22F4 /* Links */,
+				8496E6412A376CAC003F22F4 /* Homescreen */,
 				8496E63E2A376BCB003F22F4 /* DashboardView.swift */,
 				8458AE722A3A27A200086AE6 /* DashboardViewModel.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
 		};
-		8496E6402A376C9B003F22F4 /* Links */ = {
+		8496E6412A376CAC003F22F4 /* Homescreen */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			path = Links;
-			sourceTree = "<group>";
-		};
-		8496E6412A376CAC003F22F4 /* Analytics */ = {
-			isa = PBXGroup;
-			children = (
+				84D786A02A3EF2A100ACE306 /* Models.swift */,
+				84D7869F2A3EF1DD00ACE306 /* Links */,
 				84D786902A3D8D7D00ACE306 /* Analytics */,
-				8496E6422A376DC1003F22F4 /* AnalyticsView.swift */,
-				8496E6442A376F7F003F22F4 /* ChartView.swift */,
 				8496E6462A377026003F22F4 /* ScrollCardsView.swift */,
-				8496E6482A380B56003F22F4 /* LinksView.swift */,
-				8496E64A2A380B7B003F22F4 /* AnalyticsModel.swift */,
-				84D786622A3B40D000ACE306 /* LinksCardView.swift */,
 				84D786992A3DB23200ACE306 /* BottomTabCardView.swift */,
 			);
-			path = Analytics;
+			path = Homescreen;
 			sourceTree = "<group>";
 		};
 		8496E64C2A384871003F22F4 /* Network */ = {
@@ -274,7 +260,7 @@
 			path = DashboardService;
 			sourceTree = "<group>";
 		};
-		84D786642A3B461800ACE306 /* Constants */ = {
+		84D786642A3B461800ACE306 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				84D786672A3B463300ACE306 /* Color.swift */,
@@ -283,7 +269,7 @@
 				84D786972A3DA13D00ACE306 /* Shapes.swift */,
 				84D7869B2A3DBC3A00ACE306 /* DateTime.swift */,
 			);
-			path = Constants;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		84D7866B2A3CAA4B00ACE306 /* Assets */ = {
@@ -320,10 +306,21 @@
 		84D786902A3D8D7D00ACE306 /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
+				8496E6422A376DC1003F22F4 /* AnalyticsView.swift */,
 				84D786952A3D8E2E00ACE306 /* AnalyticsCardView.swift */,
-				84D7869D2A3DC2A500ACE306 /* SwiftUIView.swift */,
+				8496E6442A376F7F003F22F4 /* ChartView.swift */,
+				84D7869D2A3DC2A500ACE306 /* GraphView.swift */,
 			);
 			path = Analytics;
+			sourceTree = "<group>";
+		};
+		84D7869F2A3EF1DD00ACE306 /* Links */ = {
+			isa = PBXGroup;
+			children = (
+				8496E6482A380B56003F22F4 /* LinksView.swift */,
+				84D786622A3B40D000ACE306 /* LinksCardView.swift */,
+			);
+			path = Links;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -474,8 +471,8 @@
 			files = (
 				8458AE712A39E06F00086AE6 /* ErrorModel.swift in Sources */,
 				8496E6172A376B12003F22F4 /* Persistence.swift in Sources */,
-				8496E6102A376B11003F22F4 /* ContentView.swift in Sources */,
 				8496E6532A39C574003F22F4 /* DashboardRequestModel.swift in Sources */,
+				84D786A12A3EF2A100ACE306 /* Models.swift in Sources */,
 				84D786962A3D8E2E00ACE306 /* AnalyticsCardView.swift in Sources */,
 				8496E63F2A376BCB003F22F4 /* DashboardView.swift in Sources */,
 				84D7866A2A3CA73F00ACE306 /* Strings.swift in Sources */,
@@ -488,10 +485,9 @@
 				8496E61A2A376B12003F22F4 /* dashboard.xcdatamodeld in Sources */,
 				84D786732A3CABC500ACE306 /* Font.swift in Sources */,
 				84D786632A3B40D000ACE306 /* LinksCardView.swift in Sources */,
-				8496E64B2A380B7B003F22F4 /* AnalyticsModel.swift in Sources */,
 				8496E60E2A376B11003F22F4 /* dashboardApp.swift in Sources */,
 				8496E6492A380B56003F22F4 /* LinksView.swift in Sources */,
-				84D7869E2A3DC2A500ACE306 /* SwiftUIView.swift in Sources */,
+				84D7869E2A3DC2A500ACE306 /* GraphView.swift in Sources */,
 				8496E6582A39DAFE003F22F4 /* DashboardService.swift in Sources */,
 				84D786982A3DA13D00ACE306 /* Shapes.swift in Sources */,
 				8496E6472A377026003F22F4 /* ScrollCardsView.swift in Sources */,

@@ -28,7 +28,7 @@ struct AnalyticsView: View {
                     Image("wave")
                         .frame(width: 28, height: 28)
                 }
-               
+                
                 
             }
             

@@ -7,12 +7,6 @@
 
 import Foundation
 
-struct ChartData: Identifiable {
-    var date: String
-    var count: Int
-    var id = UUID()
-}
-
 class DashboardViewModel: ObservableObject {
     @Published var responseObject: DashboardResponse?
     var message: String = ""
@@ -20,9 +14,7 @@ class DashboardViewModel: ObservableObject {
     
     init(message: String = "") {
         self.message = message
-        
     }
-    
 }
 
 extension DashboardViewModel {
@@ -31,7 +23,6 @@ extension DashboardViewModel {
             if let _ = err {
                 print("err calling api")
             }
-            
             
             if let resp = res {
                 DispatchQueue.main.async {

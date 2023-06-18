@@ -17,7 +17,7 @@ struct DashboardResponse: Codable {
     let topSource, topLocation, startTime: String
     let linksCreatedToday, appliedCampaign: Int
     let data: DataClass
-
+    
     enum CodingKeys: String, CodingKey {
         case status, statusCode, message
         case supportWhatsappNumber = "support_whatsapp_number"
@@ -38,7 +38,7 @@ struct DashboardResponse: Codable {
 struct DataClass: Codable {
     let recentLinks, topLinks: [Link]
     let overallURLChart: [String: Int]
-
+    
     enum CodingKeys: String, CodingKey {
         case recentLinks = "recent_links"
         case topLinks = "top_links"
@@ -58,7 +58,7 @@ struct Link: Codable {
     let domainID: DomainID
     let urlPrefix: String?
     let urlSuffix, app: String
-
+    
     enum CodingKeys: String, CodingKey {
         case urlID = "url_id"
         case webLink = "web_link"
@@ -83,24 +83,24 @@ enum DomainID: String, Codable {
 // MARK: - Encode/decode helpers
 
 class JSONNull: Codable, Hashable {
-
+    
     public static func == (lhs: JSONNull, rhs: JSONNull) -> Bool {
         return true
     }
-
+    
     public var hashValue: Int {
         return 0
     }
-
+    
     public init() {}
-
+    
     public required init(from decoder: Decoder) throws {
         let container = try decoder.singleValueContainer()
         if !container.decodeNil() {
             throw DecodingError.typeMismatch(JSONNull.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Wrong type for JSONNull"))
         }
     }
-
+    
     public func encode(to encoder: Encoder) throws {
         var container = encoder.singleValueContainer()
         try container.encodeNil()

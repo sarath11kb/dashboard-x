@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 extension Font {
+    
     static let figTreeBold24 = Font.custom("Figtree-Bold", size: 24)
     static let figTreeMedium24 = Font.custom("Figtree-Medium", size: 24)
     static let figTreeMedium14 = Font.custom("Figtree-Medium", size: 14)

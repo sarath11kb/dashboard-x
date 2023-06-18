@@ -28,8 +28,8 @@ struct LinksCardView: View {
                     .frame(width: 48, height: 48)
                     .clipShape(RoundedRectangle(cornerRadius: 8))
                     .shadow(radius: 5)
-
-
+                    
+                    
                 }
                 VStack (alignment: .leading, spacing: 2){
                     Text(linkObject.title)
@@ -45,7 +45,7 @@ struct LinksCardView: View {
                 VStack(alignment: .center, spacing: 2) {
                     Text("\(linkObject.totalClicks)")
                         .font(.figTreeRegular14)
-                        
+                    
                     Text("Clicks")
                         .font(.figTreeLight12)
                         .foregroundColor(.subText)

@@ -49,7 +49,7 @@ struct LinksView: View {
                         RoundedRectangle(cornerRadius: 8)
                             .stroke(Color.searchButtonBorder, lineWidth: 2  )
                     )
-                    
+                
                 
             }
             .padding(.bottom, 28)
@@ -121,13 +121,13 @@ struct LinksView: View {
             }
             .padding(.vertical, 30)
             
-                
+            
         }
         .padding(.vertical)
         .padding(.horizontal, 0)
         .background(.clear)
-        }
- 
+    }
+    
 }
 
 struct LinksView_Previews: PreviewProvider {

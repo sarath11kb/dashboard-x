@@ -40,22 +40,19 @@ struct GraphView: View {
                     y: .value("Count", $0.count)
                 )
                 .foregroundStyle(Color.darkBluebg)
-                                
+                
             }
-
             .foregroundStyle(.black, .gray)
             .chartYScale(domain: 0...25)
-            .frame(width: 327,  height: 136)
+            .frame(height: 136)
             .scrollDisabled(false)
             .chartXAxis(.hidden)
             .chartLegend(.visible)
             .chartXAxisLabel("Months")
             .foregroundColor(.darkBluebg)
-            
-            
         }
         .padding()
-        .background(RoundedRectangle(cornerRadius: 8).fill(Color.appBackground))
+        .background(RoundedRectangle(cornerRadius: 8).fill(Color.appBackground).frame(width: 328))
     }
     
 }

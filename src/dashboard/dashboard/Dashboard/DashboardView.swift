@@ -10,7 +10,6 @@ import SwiftUI
 struct DashboardView: View {
     @StateObject var viewModel: DashboardViewModel = DashboardViewModel(message: "Hellow world")
     
-    
     var body: some View {
         ZStack {
             ScrollView(showsIndicators: false) {
@@ -27,14 +26,12 @@ struct DashboardView: View {
                     .padding(.top, 52)
                     .padding(.bottom, 48)
                     
-                
-                    
                     AnalyticsView(dashboardViewModel: viewModel)
                         .frame(width: UIScreen.main.bounds.width)
                         .padding(.top, 32)
                         .background(Color.backgroundGray)
                         .roundedCorners([UIRectCorner.topLeft, UIRectCorner.topRight], radius: 16)
-                        
+                    
                 }
             }
             
@@ -55,12 +52,10 @@ struct DashboardView: View {
                         Image("plus")
                             .padding(.top, -20)
                             .background(Ellipse().frame(width: 80,height:  60).foregroundColor(.appBackground).padding(.top, -40))
-                            
+                        
                         BottomTabCardView(image: "fast-forward", title: "Campaigns", isSelected: false)
                         BottomTabCardView(image: "user", title: "Profile", isSelected: false)
                     }
-//                    .padding(.horizontal)
-
                     
                 }
                 .frame(width: UIScreen.main.bounds.width, height: 77)

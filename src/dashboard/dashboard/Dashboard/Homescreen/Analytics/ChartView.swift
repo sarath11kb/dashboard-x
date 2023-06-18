@@ -11,8 +11,7 @@ struct ChartView: View {
     @StateObject var dashboardViewModel: DashboardViewModel
     
     var body: some View {
-        GrphView(dashboardViewModel: dashboardViewModel)
+        GraphView(dashboardViewModel: dashboardViewModel)
             .frame(width: 328, height: 200)
-            .foregroundColor(.gray)
     }
 }
